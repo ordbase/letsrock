@@ -26,12 +26,11 @@ module ApplicationHelper
   end
 
 
-
   def powered_by
     content_tag :div do
       link_to( 'Questions? Comments?', 'http://groups.google.com/group/beerdb' ) + " | " +
-      link_to( "world.db/#{WorldDb::VERSION}", 'https://github.com/geraldb/world.db.ruby' )  + ', ' +
-      link_to( "beer.db/#{BeerDb::VERSION}", 'https://github.com/geraldb/beer.db.ruby' ) + ' - ' + 
+      link_to( "world.db/#{WorldDb::VERSION}", 'https://github.com/worlddb/world.db.ruby' )  + ', ' +
+      link_to( "beer.db/#{BeerDb::VERSION}", 'https://github.com/beerkit/beer.db.ruby' ) + ' - ' + 
       content_tag( :span, "Ruby/#{RUBY_VERSION} (#{RUBY_RELEASE_DATE}/#{RUBY_PLATFORM}) on") + ' ' +
       content_tag( :span, "Rails/#{Rails.version} (#{Rails.env})" ) + " | " + 
       link_to( 'Icon Drawer Flags', 'http://www.icondrawer.com' )

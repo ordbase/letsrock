@@ -51,5 +51,34 @@ Prost::Application.routes.draw do
 
   mount BeerDbAdmin::Engine, :at => '/'  # mount a root possible?
 
+=begin
+
+FIX FIX FIX
+ more routes from beer.db.admin eninge
+ 
+  match 'signin', :to => 'sessions#new'
+  match 'signout', :to => 'sessions#destroy'
+  
+  resource :session, :only => [:new, :create, :destroy]
+  
+  match 'time',   :to => 'time#index'
+
+  # current user's start page/front page
+  match 'frontpage', :to => 'frontpage#index'
+
+  match 'users/:user_id/beers/:beer_id/drinks/new', :to => 'drinks#new', :as => 'new_user_beer_drink'
+
+  match 'bookmarks/:id/flag', :to => 'bookmarks#update_flag', :as => 'update_bookmark_flag'
+
+  resources :drinks
+  resources :bookmarks 
+
+
+  resources :users do
+   ## resources :drinks
+   ## resources :bookmarks
+  end
+
+=end
 
 end
