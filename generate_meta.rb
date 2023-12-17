@@ -1,11 +1,5 @@
 
 
-## add some core ext helpers
-class Array
-  def excluding(*elements) self - elements.flatten; end
-end
-
-
 CATEGORIES = {
   'base' => [ 
   'maxibiz',
