@@ -1,6 +1,6 @@
 
 Looking for 5000 Punks (24px)? 
-See [We Love Monkes (24×24px) »](https://github.com/ordbase/welovemonkes)  <br>
+See [We Love ~~Monkes~~ Punks (24×24px) »](https://github.com/ordbase/welovemonkes)  <br>
 Looking for 21 000 Monkes (28px)? 
 See [Monke See, Monke Do (28×28px) »](https://github.com/ordbase/monkesee-monkedo)  
 
